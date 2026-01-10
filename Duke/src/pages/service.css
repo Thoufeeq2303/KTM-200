@@ -1,0 +1,66 @@
+#banner2{
+    background-image: url(https://www.ktmindia.com/-/media/ktm/service-page/service-banner-1920_893.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:90vh;
+}
+#banner2 h1{
+    color: white;
+    position: relative;
+    top: 400px;
+    margin-left: 200px;
+    font-weight: 800;
+    font-size: 50px;
+}
+#banner2 .title{
+    color: #f26522;
+    font-size: 50px;
+}
+#banner2 .ktm-button{
+    background-color: #f26522;
+    color: white;
+    position: relative;
+    top: 400px;
+    margin-left: 200px;
+    padding: 20px 90px 20px 90px;
+    font-size: 30px;
+}
+#text1 h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+.table-container {
+  width: 100%;
+  margin: auto;
+}
+.ktm-table {
+  width: 100%;
+  text-align: center;
+  border: 3px solid #ddd;
+  padding: 20px 30px 20px 30px;
+}
+.ktm-table th {
+  padding: 35px 30px 35px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+.ktm-table td {
+  padding: 35px 30px 35px 30px;
+  border-bottom: 1px solid #ddd;
+}
+.tick {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.duke-button{
+    background-color: #f26522;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20px 35px 20px 35px;
+    margin-left: 450px;
+}

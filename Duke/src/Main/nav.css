@@ -1,0 +1,91 @@
+.navbar {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navbar .nav-link {
+  color: white !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #ff6600 !important;
+  text-decoration: underline;
+}
+.mega-parent {
+  position: static;    
+}
+.mega-menu {
+  position: fixed;        
+  top: 70px;              
+  left: 0;
+  width: 100%;      
+  max-width: 100%;
+  background: #fff;
+  padding: 25px 40px;
+  display: flex;
+  gap: 40px;
+  border-top: 4px solid #ff6600;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+  z-index: 2000;
+}
+.left-menu {
+  width: 240px;
+  border-right: 1px solid #dedede;
+  padding-right: 20px;
+}
+.left-menu p {
+  padding: 12px 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+.left-menu p.active,
+.left-menu p:hover {
+  color: #ff6600;
+}
+.right-menu {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+}
+.bike-name {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.bike-name:hover {
+  color: #ff6600;
+}
+.bike-card {
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.bike-card:hover {
+  transform: translateY(-5px);
+}
+.bike-img {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+.bike-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav-item-sym{
+  padding: 20px;
+  font-size: 30px;
+}

@@ -1,0 +1,36 @@
+#black{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 30px;
+    margin-top: 10px;
+}
+.bl{
+    font-size: 20px;
+    word-spacing: 20px;
+    margin-left: 1070px;
+}
+#foot{
+    padding: 70px;
+    text-align: center;
+}
+#foot h5{
+    padding: 20px;
+}
+#foot h6{
+    color: black;
+}
+#foot a{
+    text-decoration: none;
+}
+#foot h6:hover{
+    color: #f36c21;
+}
+    #last{
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+    #last p{
+        margin-left: 200px;
+    }

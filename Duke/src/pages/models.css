@@ -1,0 +1,337 @@
+*{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+#banner{
+  background-image: url(https://www.ktmindia.com/-/media/images/ktm/ktm-bikes/naked-bike/ktm-200-duke-2024/200-duke-new/banner/200-duke-web.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:80vh;
+}
+.hero{
+  color: white;
+  position: relative;
+  top: 150px;
+  font-weight: 700;
+}
+.ktm-animated-btn {
+  background: #f26522;
+  color: #ffffff;     
+  padding: 14px 36px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+.ktm-animated-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;                       
+  width: 100%;
+  height: 100%;
+  background: #ffffff;               
+  transition: left 0.4s ease;        
+  z-index: 0;
+}
+.ktm-animated-btn:hover::before {
+  left: 0;                          
+}
+.ktm-animated-btn:hover {
+  color: #000000;                    
+}
+.ktm-animated-btn span {
+  position: relative;
+  z-index: 1;
+}
+#down img{
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+#down img:hover{
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+}
+#down h5{
+  margin-left: 70px;
+  position: relative;
+  bottom: 40px;
+  text-align: left;
+}
+#down h6{
+  margin-left: 70px;
+  position: relative;
+  bottom: 40px;
+  text-align: left;
+}
+#road img{
+    width: 100%;
+    height: 100%;
+}
+#road .select{
+  padding: 10px 45px 10px 15px;
+}
+#road h4{
+  font-weight: 700;
+}
+.rd{
+    text-align: center;
+}
+.ex{
+    background-color: rgb(255, 89, 0);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    color: white;
+}
+.Ktm-rd{
+  background: #f26522;       
+  color: #ffffff;             
+  padding: 10px 210px 10px 210px;
+  border: 2px solid #f26522;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.dd{
+  margin-left: 200px;
+}
+.dd .btn{
+  align-items: center;
+  padding: 10px 120px 10px 120px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+#emi{
+    background: url('https://cdn.bajajauto.com/-/media/images/ktm/ktm-bikes/enduro/ktm-200-duke/loan-banner/loan-web-new.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.emm{
+    color: white;
+    text-align: left;
+}
+.emm h2{
+    font-size: 80px;
+    font-weight: 800;
+}
+.emm h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+.emm h6{
+    font-size: 25px;
+    font-weight: 300;
+}
+.ktm-btn {
+  background: #f26522;        
+  color: #ffffff;            
+  padding: 10px 230px 10px 230px;
+  border: 2px solid #f26522;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ktm-btn:hover {
+  background: #ffffff;        
+  color: #f26522;           
+  border-color: #f26522;
+}
+#spec{
+    background-color: rgb(213, 88, 21);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+#spec h1{
+    padding: 35px 10px 100px 10px;
+    font-size: 70px;
+    font-weight: 600;
+}
+#spec h6{
+    color: black;
+    text-align: left;
+}
+#spec h3{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+}
+#spec p{
+    text-align: left;
+}
+.btn-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn-orange {
+  background: #f26522;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+.btn-white {
+  background: white;
+  border: 2px solid #f26522;
+  padding: 12px 24px;
+  font-weight: 700;
+  color: #f26522;
+  cursor: pointer;
+  transition: 1.0s;
+}
+.btn-white:hover {
+  background: #f26522;
+  color: white;
+}
+.gallery-wrap {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.main-swiper {
+  width: 100%;
+  height: 420px;
+  margin-bottom: 18px;
+}
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.main-img {
+  width: 48%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.text-block {
+  width: 52%;
+  padding: 8px 12px;
+}
+.text-block h2 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.text-block p {
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}
+.thumbs-swiper {
+  height: 100px;
+  box-sizing: border-box;
+}
+.thumb-img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0.8;
+  border: 2px solid transparent;
+  transition: transform .15s ease, opacity .15s ease, border-color .15s ease;
+  cursor: pointer;
+}
+.thumb-img:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.thumb-active .thumb-img {
+  border-color: #ff6600;
+  opacity: 1;
+  transform: scale(1.02);
+}
+.tx1{
+  color: #f36c21;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 800;
+  font-size: 90px;
+}
+#detail .gs-wrapper{
+  display:flex;
+  gap:200px;
+  align-items:center;
+  max-width:1100px;
+  margin:70px auto;
+  margin-top: 100px;
+}
+#detail .gs-left img{
+  width:100%;
+  max-width:500px;
+  object-fit:contain;
+  margin-bottom: -70px;
+}
+#detail .gs-right{
+  flex:1;
+}
+#detail .gs-eyebrow{
+  color:#f36c21;
+  font-weight:bold;
+  margin-bottom:6px;
+}
+#detail .gs-heading{
+  color: black;
+  font-size:32px;
+  margin:0;
+}
+#detail .gs-title{
+  color: black;
+  font-weight:bold;
+  margin-top:10px;
+}
+#detail .gs-desc{
+  color:#555;
+  margin-top:10px;
+  line-height:1.5;
+}
+#detail .gs-controls button{
+  margin-top:20px;
+  margin-right:10px;
+  padding:8px 14px;
+  border:1px solid #ddd;
+  background:#fff;
+  cursor:pointer;
+}
+#detail .gs-controls button:hover{
+  border-color:#f36c21;
+}
+#gallery{
+  background-color: rgb(228, 221, 221);
+  padding: 70px;
+}
+#qa h1{
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 60px;
+}
+#qa img{
+  height: 100%;
+  width: 100%;
+}
+#qa .accordion{
+  margin-top: 150px;
+}
+.accordion-body{
+  font-size: 13px;
+}

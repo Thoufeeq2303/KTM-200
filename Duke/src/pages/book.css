@@ -1,0 +1,54 @@
+#top{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));;
+    padding: 50px;
+}
+.KTMBike{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(242, 243, 244);
+    margin-left: 100px;
+}
+.Side{
+   padding-left: 20;
+   border-left: 20px;
+}
+.booking{
+    margin-top: 350px;
+    background-color: white;
+}
+.bookings{
+    margin-top: 350px;
+    margin-left: 70px;
+    background-color: white;
+}
+.obj{
+    text-align: center;
+}
+.booking .rate{
+    font-weight: 600;
+    font-size: 30px;
+}
+.booking .location{
+    color: orange;
+}
+.btn10{
+    position: relative;
+    top: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: #f26522;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+.obj{
+    position: relative;
+    top:35px;
+    color: green;
+}
+.titlet{
+    text-align: center;
+    font-weight: 800;
+}
+.cont{
+    background-color: rgb(242, 243, 244);
+}

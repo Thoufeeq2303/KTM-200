@@ -1,0 +1,16 @@
+.table{
+    align-items: center;
+    text-align: center;
+}
+.tb{
+    margin-left: 250px;
+}
+.red{
+    background-color: black;
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+.red:hover{
+    background-color: #ff6600;
+    color: black;
+}

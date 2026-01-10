@@ -1,0 +1,17 @@
+#top{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));;
+    padding: 50px;
+}
+.select2{
+    padding: 10px 180px 10px 180px;
+}
+.btn2{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px 90px 10px 90px;
+}
+.con{
+    margin-top: 20px;
+    text-align: center;
+    padding-inline: 60px;
+}
