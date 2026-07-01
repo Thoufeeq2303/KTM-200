@@ -6,8 +6,8 @@ const cors = require("cors")
 app.use(express.json())
 app.use(cors())
 
-app.get("/", (req,res)=>{
-    res.send("hello thoufeeq")
+app.get("/", (req, res) => {
+  res.send("hello thoufeeq")
 })
 
 
@@ -29,47 +29,47 @@ async function run() {
     await client.connect();
     const productCollection = client.db("bikeCollection").collection("bikedata")
 
-    app.post("/uploadbikedata", async(req,res)=>{
+    app.post("/uploadbikedata", async (req, res) => {
       const data = req.body
       const result = await productCollection.insertMany([data])
       res.send(result)
     })
 
-    app.get("/getKTM", async(req,res)=>{
+    app.get("/getKTM", async (req, res) => {
       const KTM = productCollection.find()
       const result = await KTM.toArray()
       res.send(result)
     })
-    
+
     app.get("/getKTMByCategory", async (req, res) => {
-  const { category } = req.query;
-  const filter = category ? { category } : {};
-  const result = await productCollection.find(filter).toArray();
-  res.send(result);
-});
+      const { category } = req.query;
+      const filter = category ? { category } : {};
+      const result = await productCollection.find(filter).toArray();
+      res.send(result);
+    });
 
 
-    app.get("/getKTM/:id", async(req,res)=>{
+    app.get("/getKTM/:id", async (req, res) => {
       const id = req.params.id
-      const filter = {_id : new ObjectId(id)}
+      const filter = { _id: new ObjectId(id) }
       const result = await productCollection.findOne(filter)
       res.send(result)
     })
 
-    app.patch("/updateKTM/:id", async(req,res)=>{
+    app.patch("/updateKTM/:id", async (req, res) => {
       const id = req.params.id
       const update = req.body
-      const filter = {_id: new ObjectId(id)}
-      const object = {$set:{...update}}
+      const filter = { _id: new ObjectId(id) }
+      const object = { $set: { ...update } }
 
-      const option = {upsert: true}
-      const result = await productCollection.updateOne(filter,  object, option)
+      const option = { upsert: true }
+      const result = await productCollection.updateOne(filter, object, option)
       res.send(result)
     })
 
-    app.delete("/getKTM/:id", async(req,res)=>{
+    app.delete("/getKTM/:id", async (req, res) => {
       const id = req.params.id
-      const filter = {_id : new ObjectId(id)}
+      const filter = { _id: new ObjectId(id) }
       const result = await productCollection.deleteOne(filter)
       res.send(result)
     })
@@ -85,6 +85,6 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.listen(port,()=>{
-    console.log(`http://localhost:${port}`)
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`)
 })

@@ -206,9 +206,8 @@ const Blog = () => {
               {TABS.map((tab) => (
                 <button
                   key={tab}
-                  className={`blog-tab ${
-                    activeTab === tab ? 'active' : ''
-                  }`}
+                  className={`blog-tab ${activeTab === tab ? 'active' : ''
+                    }`}
                   onClick={() => setActiveTab(tab)}
                 >
                   {tab}
@@ -236,7 +235,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

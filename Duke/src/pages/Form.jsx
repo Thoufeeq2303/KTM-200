@@ -25,7 +25,8 @@ const Form = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3229/getKTM/${id}`) .then(res => res.json()) .then(data => setBikedata(data)); }, [id]);
+    fetch(`http://localhost:3229/getKTM/${id}`).then(res => res.json()).then(data => setBikedata(data));
+  }, [id]);
 
   const isFormValid =
     name.trim() &&
@@ -98,10 +99,10 @@ const Form = () => {
                 VERIFY AND PAY
               </button>
               <div className='con'> By clicking on Verify and Pay, you agree to our T&C and Privacy Policy </div>
-    </form>
-  </div>
-</div>
-</div>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </>

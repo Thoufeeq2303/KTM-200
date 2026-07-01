@@ -69,7 +69,7 @@ const Book = () => {
                   </div>
                 </div>
                 <div className="col-lg-5 bookings">
-                  <Link to={`/Form/${id}`}className="btn10">BOOK NOW @ ₹1999</Link>
+                  <Link to={`/Form/${id}`} className="btn10">BOOK NOW @ ₹1999</Link>
                   <div className="obj">Fully Refundable</div>
                 </div>
               </div>

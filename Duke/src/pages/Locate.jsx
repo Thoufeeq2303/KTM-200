@@ -5,18 +5,22 @@ import { FiCompass } from "react-icons/fi";
 import Footer from "../Main/Footer";
 
 const dealers = [
-  { id: 1, name: "KTM@ COIMBATORE", 
-    address: "Mettupalayam Road" 
+  {
+    id: 1, name: "KTM@ COIMBATORE",
+    address: "Mettupalayam Road"
   },
-  { id: 2, name: "KTM@ COIMBATORE", 
-    address: "Sungam Bypass" 
+  {
+    id: 2, name: "KTM@ COIMBATORE",
+    address: "Sungam Bypass"
   },
-  { id: 3,
+  {
+    id: 3,
     name: "KTM@ COIMBATORE",
     address: "Avinashi Road",
   },
-  { id: 4, name: "KTM@ COIMBATORE", 
-    address: "Ganapathy" 
+  {
+    id: 4, name: "KTM@ COIMBATORE",
+    address: "Ganapathy"
   },
 ];
 const Locate = () => {
@@ -25,30 +29,30 @@ const Locate = () => {
     <>
       <section id="banner1">
         <div className="container map"><h2>.</h2></div>
-          
-          <div className="dealer-container">
 
-      <h2 className="dealer-title">LOCATE A DEALER</h2>
+        <div className="dealer-container">
 
-      <div className="input-box">
-        <label className="label">LOCATION <span>*</span></label>
+          <h2 className="dealer-title">LOCATE A DEALER</h2>
 
-        <div className="location-wrapper">
-          <div className="input-icon">
-            <FaMapMarkerAlt size={18} />
+          <div className="input-box">
+            <label className="label">LOCATION <span>*</span></label>
+
+            <div className="location-wrapper">
+              <div className="input-icon">
+                <FaMapMarkerAlt size={18} />
+              </div>
+
+              <input type="text" placeholder="Coimbatore" className="location-input" />
+
+              <button className="detect-btn">
+                <FiCompass size={18} />
+                DETECT
+              </button>
+            </div>
           </div>
 
-          <input type="text"placeholder="Coimbatore" className="location-input"/>
-
-          <button className="detect-btn">
-            <FiCompass size={18} />
-            DETECT
-          </button>
         </div>
-      </div>
 
-    </div>
-        
       </section>
       <div className="map-page">
         <aside className="sidebar">
@@ -76,7 +80,7 @@ const Locate = () => {
           />
         </main>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
